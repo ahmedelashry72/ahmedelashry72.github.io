@@ -1,0 +1,11 @@
+# Security headers for static hosts that support them (Netlify, Cloudflare Pages).
+# GitHub Pages does NOT read this file — it has no mechanism for custom HTTP headers.
+# If you deploy here instead of / in front of GitHub Pages, these will apply automatically.
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; base-uri 'self'; form-action 'self' mailto:;
