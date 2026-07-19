@@ -22,7 +22,7 @@ A bilingual (English / Arabic) executive portfolio site for Ahmed El-Ashry — E
 │   ├── i18n-consulting.js   EN/AR text for consulting.html
 │   └── i18n-contact.js      EN/AR text for contact.html
 └── assets/
-    ├── portrait.jpg / .webp
+    ├── portrait-cutout.png / .webp
     ├── logo/                Monogram + horizontal logo (SVG + PNG)
     ├── icons/                Contact icons
     └── favicon/              Favicon set (16–512px + .ico)
@@ -73,7 +73,7 @@ The homepage includes a placeholder testimonials section styled to match the sit
 
 ## Performance notes
 
-- Portrait image is served as WebP with a JPEG fallback (`<picture>` element), reduced from ~2.6MB to ~40–60KB.
+- Portrait image is served as WebP with a PNG fallback (`<picture>` element).
 - All icon/logo PNGs are palette-optimized.
 - Non-critical images use `loading="lazy"`.
 - Fonts load from Google Fonts CDN with `display=swap` to avoid render blocking.
