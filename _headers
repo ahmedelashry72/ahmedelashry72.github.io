@@ -8,4 +8,16 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), camera=(), microphone=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
-  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; base-uri 'self'; form-action 'self' mailto:;
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'sha256-zgNcfgj/BjswSLo0KAoXlbBTgRNEWAS9i4ME8XvK7z8='; base-uri 'self'; form-action 'self' mailto:;
+
+# Long-lived caching for fingerprint-free static assets. Since filenames here don't
+# include content hashes, this trades instant-update for repeat-visit speed — fine for
+# a low-churn personal site; revisit if assets start changing frequently without renaming.
+/assets/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/css/*
+  Cache-Control: public, max-age=86400, must-revalidate
+
+/js/*
+  Cache-Control: public, max-age=86400, must-revalidate

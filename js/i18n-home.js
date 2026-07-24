@@ -1,13 +1,14 @@
 window.I18N = {
   en: {
     __title: "Ahmed El-Ashry — Executive Hospitality Consultant",
+    skip_link: "Skip to main content",
     nav_home: "Home", nav_experience: "Experience", nav_consulting: "Consulting", nav_contact: "Contact",
     hero_eyebrow: "Executive Hospitality Leadership · GCC",
     hero_title: "Transforming Restaurant Operations Into Profitable, Scalable Businesses.",
     hero_lead: "Restaurant Operations Director | Hospitality Consultant | GCC",
     cta_experience: "Book a Consultation",
     cta_contact: "Explore My Experience",
-    hero_caption: "Ahmed El-Ashry — Director of Restaurant Operations",
+    hero_caption: "Ahmed El-Ashry — Restaurant Operations Director",
     hstat1_n: "25+", hstat1_l: "Years Experience",
     hstat2_n: "20+", hstat2_l: "Restaurant & Café Projects",
     hstat3_n: "250+", hstat3_l: "Team Members Led",
@@ -45,6 +46,7 @@ window.I18N = {
   },
   ar: {
     __title: "أحمد العشري — مستشار تنفيذي في قطاع الضيافة",
+    skip_link: "تخطَّ إلى المحتوى الرئيسي",
     nav_home: "الرئيسية", nav_experience: "الخبرات", nav_consulting: "الاستشارات", nav_contact: "تواصل",
     hero_eyebrow: "قيادة تنفيذية في قطاع الضيافة · دول الخليج",
     hero_title: "تحويل عمليات المطاعم إلى أعمال مربحة وقابلة للتوسع.",

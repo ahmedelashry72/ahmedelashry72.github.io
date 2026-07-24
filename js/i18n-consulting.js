@@ -1,6 +1,7 @@
 window.I18N = {
   en: {
     __title: "Consulting — Ahmed El-Ashry",
+    skip_link: "Skip to main content",
     nav_home: "Home", nav_experience: "Experience", nav_consulting: "Consulting", nav_contact: "Contact",
     hero_eyebrow: "Executive Hospitality Leadership · GCC",
     page_eyebrow: "Consulting",
@@ -33,6 +34,7 @@ window.I18N = {
   },
   ar: {
     __title: "الاستشارات — أحمد العشري",
+    skip_link: "تخطَّ إلى المحتوى الرئيسي",
     nav_home: "الرئيسية", nav_experience: "الخبرات", nav_consulting: "الاستشارات", nav_contact: "تواصل",
     hero_eyebrow: "قيادة تنفيذية في قطاع الضيافة · دول الخليج",
     page_eyebrow: "الاستشارات",

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ahmedelashry.github.io/sitemap.xml
+Sitemap: https://ahmedelashry72.github.io/ahmedelashry.github.io/sitemap.xml
