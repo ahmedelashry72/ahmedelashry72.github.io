@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#103F3C">
+<meta name="description" content="كتالوج تجريبي تفاعلي لقطع أثاث VIOLETA SPACE – تصفح الصور والخامات واطلب عرض سعر.">
+<title>VIOLETA SPACE | كتالوج الأثاث التفاعلي</title>
+<style>
+:root{--deep:#082927;--teal:#103f3c;--tealLight:#1d5751;--gold:#c6a15b;--goldLight:#e4c991;--cream:#f8f2e8;--sand:#eae1d2;--ink:#183935;--muted:#b8cbc6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 52% 15%,#1c524d 0,#103f3c 38%,#082927 100%);color:#fff;font:16px/1.7 Tahoma,Arial,sans-serif;min-height:100dvh}
+button,a{-webkit-tap-highlight-color:transparent}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid var(--goldLight);outline-offset:3px}
+a{text-decoration:none;color:inherit}
+.bgGrid{position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(#fff1 1px,transparent 1px),linear-gradient(90deg,#fff1 1px,transparent 1px);background-size:88px 88px;opacity:.18}
+.container{width:min(1160px,calc(100% - 28px));margin:auto;position:relative;z-index:1}
+header{padding:24px 0 15px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #ffffff1c}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand img{width:min(230px,45vw);max-height:78px;object-fit:contain;object-position:center right;filter:drop-shadow(0 2px 5px #0002)}
+.brand-label{border-right:1px solid #c6a15b77;padding-right:13px}
+.brand-label strong{display:block;color:var(--goldLight);font:700 16px Georgia,serif;letter-spacing:.34em;direction:ltr;text-align:left}
+.brand-label small{display:block;color:#cbd8d5;font-size:10px;letter-spacing:.1em;white-space:nowrap}
+.demoTag{border:1px solid #c6a15b88;border-radius:30px;color:var(--goldLight);padding:7px 12px;font-size:12px;white-space:nowrap}
+.hero{text-align:center;padding:32px 0 23px}
+.eyebrow{font:12px Georgia,serif;letter-spacing:.25em;color:var(--goldLight);direction:ltr}
+h1{font-size:clamp(28px,5vw,53px);line-height:1.3;margin:12px 0 10px;font-weight:700}
+.hero p{max-width:620px;margin:0 auto;color:#c9d9d5;font-size:14px}
+.tabBar{display:flex;justify-content:center;gap:10px;overflow-x:auto;padding:0 0 18px;scrollbar-width:none}
+.tabBar::-webkit-scrollbar{display:none}
+.tab{padding:12px 18px;min-width:145px;color:#e6f0ed;background:#ffffff0b;border:1px solid #ffffff30;border-radius:14px;white-space:nowrap;transition:.2s;flex:0 0 auto}
+.tab.active{background:#c6a15b;color:#103f3c;border-color:var(--gold);font-weight:700}
+.tab small{display:block;font:11px Georgia,serif;letter-spacing:.12em;opacity:.8;direction:ltr}
+.tab strong{display:block;font-size:14px}
+.catalogFrame{background:linear-gradient(135deg,#fefaf2,#e9dfd0);border:1px solid #efe1ca;border-radius:23px;padding:15px;box-shadow:0 22px 70px #0005, inset 0 1px 0 #fff}
+.paper{background:#f8f2e8;border-radius:13px;box-shadow:inset 0 0 0 1px #b69d7150;position:relative;color:var(--ink)}
+.paper:before{content:"";position:absolute;inset:15px;border:1px solid #c6a15b6b;pointer-events:none;z-index:2}
+.product{display:grid;grid-template-columns:1.24fr .76fr;min-height:480px;position:relative;overflow:hidden}
+.product[hidden]{display:none!important}
+.visual{position:relative;display:flex;flex-direction:column;padding:22px 22px 12px;justify-content:space-between;align-items:center;background:radial-gradient(ellipse at 55% 55%,#fffefa 1%,#f2e8d9 65%,#e6d9c5 100%);overflow:hidden;border-left:1px solid #c6a15b4b}
+.visual::after{content:"";position:absolute;bottom:14%;left:14%;right:14%;height:20px;background:#6657463a;filter:blur(18px);border-radius:50%}
+.artTop,.artBottom{position:relative;z-index:2;width:100%;display:flex;justify-content:space-between;align-items:center;color:#a48d63;font:10px Georgia,serif;letter-spacing:.17em;direction:ltr}
+.visual img{width:min(100%,620px);height:355px;max-width:100%;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 18px 15px #49352729);animation:rise .65s ease both}
+@keyframes rise{from{transform:translateY(20px) scale(.95);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
+.info{padding:33px 33px 28px;display:flex;flex-direction:column;justify-content:center}
+.serial{font:12px Georgia,serif;letter-spacing:.22em;color:#a78b58;direction:ltr;text-align:right}
+.info h2{font-size:clamp(27px,3.2vw,39px);line-height:1.28;margin:18px 0 4px}
+.nameEn{font:15px Georgia,serif;letter-spacing:.12em;color:#92764e;direction:ltr;text-align:right}
+.info p{font-size:14px;line-height:2;color:#4d655f;margin:19px 0 20px}
+.info .line{height:1px;background:#bfae8f6b;margin-bottom:15px}
+.category{color:#897550;font:12px Georgia,serif;letter-spacing:.17em;direction:ltr;text-align:right}
+.estimate{font-size:13px;background:#103f3c0c;border:1px solid #103f3c24;padding:12px 14px;color:#315850;border-radius:12px;margin-top:24px}
+.pageBtns{display:flex;justify-content:center;align-items:center;gap:15px;margin:16px 0 22px}
+.arrow{width:44px;height:44px;border-radius:50%;border:1px solid #c6a15bcb;background:#10433e;color:#e4c991;font-size:25px;display:grid;place-items:center}
+.arrow:hover{background:#1a5b52}
+.counter{min-width:55px;color:#d5b880;font:14px Georgia,serif;letter-spacing:.15em;text-align:center;direction:ltr}
+.checkout{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:6px}
+.panel{background:#ffffff0b;border:1px solid #ffffff2a;border-radius:20px;padding:22px}
+.panel h3{margin:0 0 9px;font-size:22px}
+.panel .sub{color:#b9cbc7;font-size:13px;margin:0 0 16px}
+.materials{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 20px}
+.material{border:1px solid #ffffff40;color:#edf4f0;padding:9px 14px;background:#ffffff0d;border-radius:100px;font-size:13px}
+.material[aria-pressed="true"]{color:#092f2c;background:var(--goldLight);border-color:var(--gold)}
+.qtyRow{display:flex;align-items:center;gap:15px;margin-bottom:19px}
+.qtyRow span:first-child{color:#c4d5ce;font-size:13px;margin-left:auto}
+.qtyBtn{width:38px;height:38px;border:1px solid #ffffff45;color:#fff;background:#ffffff12;border-radius:10px;font-size:21px}
+#qty{min-width:19px;text-align:center}
+.add{width:100%;background:linear-gradient(120deg,#dfc58d,#c6a15b);border:0;color:#103f3c;font-weight:700;border-radius:12px;padding:14px 15px}
+.quoteItems{min-height:80px}
+.empty{color:#bfcfcb;font-size:14px;padding:20px 0}
+.cartRow{padding:10px 0;border-bottom:1px solid #ffffff1a;display:flex;align-items:center;gap:8px}
+.cartRow strong{font-size:14px;display:block}
+.cartRow small{color:#bfcfcb;font-size:12px;display:block;line-height:1.6}
+.cartRow button{margin-right:auto;border:none;background:none;color:#e2c18a;font-size:13px}
+.quoteActions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.quoteActions button,.quoteActions a{font:700 13px Tahoma,Arial,sans-serif;border-radius:12px;padding:12px 8px;text-align:center}
+.copy{background:transparent;color:#e8c990;border:1px solid #c6a15b9c}
+.wa{background:#146b53;color:white;border:none}
+.foot{color:#b1c6c1;text-align:center;font-size:12px;padding:20px 0 35px;max-width:700px;margin:auto}
+.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);background:#e4c991;color:#0c302c;padding:12px 22px;border-radius:40px;opacity:0;pointer-events:none;transition:.25s;z-index:20;box-shadow:0 6px 30px #0005;font-size:14px}
+.toast.visible{opacity:1;transform:translate(-50%,0)}
+@media(max-width:750px){.container{width:min(100% - 18px,600px)}header{padding:12px 0 10px}.brand img{width:145px;max-height:62px}.brand-label{padding-right:9px}.brand-label strong{font-size:12px;letter-spacing:.2em}.brand-label small{font-size:9px}.demoTag{font-size:10px;padding:6px 8px}.hero{padding:23px 0 17px}h1{margin:8px 0 8px;font-size:clamp(27px,7vw,36px)}.eyebrow{font-size:10px}.hero p{font-size:12px}.tabBar{justify-content:flex-start}.tab{min-width:118px;padding:9px 13px}.catalogFrame{padding:9px;border-radius:18px}.product{display:flex;flex-direction:column}.visual{order:0;min-height:320px;padding:18px 17px 7px;border-left:none;border-bottom:1px solid #c6a15b40}.visual img{height:270px}.info{order:1;padding:22px 26px 26px}.info h2{font-size:28px;margin:9px 0 3px}.info p{margin:10px 0 13px;line-height:1.8}.estimate{margin-top:11px}.paper:before{inset:10px}.checkout{grid-template-columns:1fr;gap:12px}.panel{padding:18px}.panel h3{font-size:20px}.pageBtns{margin:13px 0 15px}.foot{font-size:11px;padding:15px 0 25px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="bgGrid"></div><div class="container">
+<header>
+  <div class="brand"><img src="https://violeta-catalog-assets.lovable.app/assets/violeta-logo.png" alt="الشعار الرسمي لفيوليتا" width="230" height="76"><div class="brand-label"><strong>SPACE</strong><small>FURNITURE EDITION</small></div></div>
+  <div class="demoTag">تجربة مستقلة</div>
+</header>
+<div class="hero"><div class="eyebrow">THE ART OF LIVING · VIOLETA SPACE</div><h1>اكتشف تفاصيل مختلفة</h1><p>قطع أثاث بتصميمات عصرية، استعرضها واختار الخامة المناسبة ثم جهّز طلب عرض السعر.</p></div>
+<nav class="tabBar" aria-label="اختيار قطعة أثاث" id="tabs">
+<button type="button" class="tab active" data-p="0" aria-current="true"><small>01 / SOFA</small><strong>صوفا لونا</strong></button>
+<button type="button" class="tab" data-p="1"><small>02 / LOUNGE</small><strong>كرسي آرك</strong></button>
+<button type="button" class="tab" data-p="2"><small>03 / TABLE</small><strong>طاولة نورا</strong></button>
+</nav>
+<main>
+<div class="catalogFrame"><div class="paper" id="paper">
+<section class="product" data-i="0">
+ <div class="visual"><div class="artTop"><span>VIOLETA SPACE</span><span>01 / 03</span></div><img src="https://violeta-catalog-assets.lovable.app/assets/sofa-boucle.jpg" alt="تصور واقعي لصوفا لونا الكريمية" loading="eager" decoding="async"><div class="artBottom"><span>CURATED OBJECT</span><span>LUNA SOFA</span></div></div>
+ <div class="info"><div class="serial">COLLECTION · 01</div><h2>صوفا لونا</h2><div class="nameEn">LUNA SOFA</div><p>صوفا منحنية بخطوط انسيابية ناعمة، مع قماش بوكليه كريمي يعطي إحساسًا بالدفء والفخامة.</p><div class="line"></div><div class="category">LIVING · SOFA</div><div class="estimate">التنفيذ حسب المقاس والخامة المطلوبة. <strong>اطلب عرض سعر.</strong></div></div>
+</section>
+<section class="product" data-i="1">
+ <div class="visual"><div class="artTop"><span>VIOLETA SPACE</span><span>02 / 03</span></div><img src="https://violeta-catalog-assets.lovable.app/assets/chair-emerald-velvet.jpg" alt="تصور واقعي لكرسي آرك المخملي الزمردي" loading="lazy" decoding="async"><div class="artBottom"><span>CURATED OBJECT</span><span>ARC LOUNGE</span></div></div>
+ <div class="info"><div class="serial">COLLECTION · 02</div><h2>كرسي آرك</h2><div class="nameEn">ARC LOUNGE</div><p>كرسي استرخاء مخملي أخضر زمردي بتفاصيل ذهبية، يناسب المساحات الهادئة وزوايا الاستقبال الفاخرة.</p><div class="line"></div><div class="category">LOUNGE · CHAIR</div><div class="estimate">التنفيذ حسب المقاس والخامة المطلوبة. <strong>اطلب عرض سعر.</strong></div></div>
+</section>
+<section class="product" data-i="2">
+ <div class="visual"><div class="artTop"><span>VIOLETA SPACE</span><span>03 / 03</span></div><img src="https://violeta-catalog-assets.lovable.app/assets/table-walnut-oval.jpg" alt="تصور واقعي لطاولة نورا من خشب الجوز" loading="lazy" decoding="async"><div class="artBottom"><span>CURATED OBJECT</span><span>NORA TABLE</span></div></div>
+ <div class="info"><div class="serial">COLLECTION · 03</div><h2>طاولة نورا</h2><div class="nameEn">NORA COFFEE TABLE</div><p>طاولة قهوة بيضاوية بخشب جوز غني بالتفاصيل والحبوب الطبيعية، لتكمل جلسة معاصرة ومتوازنة.</p><div class="line"></div><div class="category">COFFEE · TABLE</div><div class="estimate">التنفيذ حسب المقاس والخامة المطلوبة. <strong>اطلب عرض سعر.</strong></div></div>
+</section>
+</div></div>
+<div class="pageBtns"><button type="button" class="arrow" id="prev" aria-label="المنتج السابق">❯</button><span class="counter" id="pageCounter">01 / 03</span><button type="button" class="arrow" id="next" aria-label="المنتج التالي">❮</button></div>
+<div class="checkout">
+ <div class="panel"><h3>اختار تفاصيل قطعتك</h3><p class="sub">اختيارات الخامات للطلب فقط؛ الصور توضيحية ولا تتغير تلقائيًا باختيار الخامة.</p><div class="materials" id="materials">
+ <button type="button" class="material" aria-pressed="true">بوكليه كريمي</button><button type="button" class="material" aria-pressed="false">مخمل</button><button type="button" class="material" aria-pressed="false">خامة حسب الطلب</button>
+ </div><div class="qtyRow"><span>الكمية</span><button class="qtyBtn" type="button" id="minus" aria-label="تقليل الكمية">−</button><b id="qty">1</b><button class="qtyBtn" type="button" id="plus" aria-label="زيادة الكمية">+</button></div><button class="add" id="add">أضف إلى طلب عرض السعر</button></div>
+ <div class="panel"><h3>طلب عرض السعر</h3><p class="sub">أضف أكثر من قطعة، وبعدها انسخ التفاصيل أو شاركها على واتساب.</p><div class="quoteItems" id="items"><p class="empty">لم تتم إضافة قطع حتى الآن.</p></div><div class="quoteActions"><button type="button" class="copy" id="copy">نسخ تفاصيل الطلب</button><a id="wa" class="wa" href="https://wa.me/?text=%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1" rel="noopener" target="_blank">مشاركة واتساب</a></div></div>
+</div>
+</main>
+<p class="foot">هذه صور تصورّية مولّدة بالذكاء الاصطناعي لعرض فكرة الكتالوج فقط؛ ليست أعمالًا منفذة أو منتجات معروضة للبيع بأسعار ثابتة. النسخة تجربة مستقلة ولم يُعدَّل الموقع الرسمي.</p>
+</div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+"use strict";
+document.documentElement.classList.add("js");
+var products=[
+{id:"sofa",name:"صوفا لونا",en:"Luna Sofa",materials:["بوكليه كريمي","مخمل","خامة حسب الطلب"]},
+{id:"chair",name:"كرسي آرك",en:"Arc Lounge",materials:["مخمل زمردي","جلد طبيعي","خامة حسب الطلب"]},
+{id:"table",name:"طاولة نورا",en:"Nora Coffee Table",materials:["خشب جوز","بلوط","خامة حسب الطلب"]}
+];
+var idx=0,mat=0,qty=1,cart=[], sections=[].slice.call(document.querySelectorAll(".product")), tabs=[].slice.call(document.querySelectorAll(".tab")), materials=document.getElementById("materials");
+var toast=document.getElementById("toast");
+function feedback(s){toast.textContent=s;toast.classList.add("visible");clearTimeout(feedback.timer);feedback.timer=setTimeout(function(){toast.classList.remove("visible");},2000);}
+function show(i){idx=(i+products.length)%products.length;mat=0;qty=1;sections.forEach(function(el,n){el.hidden=n!==idx});tabs.forEach(function(el,n){el.classList.toggle("active",n===idx);el.setAttribute("aria-current",n===idx?"true":"false")});document.getElementById("pageCounter").textContent="0"+(idx+1)+" / 03";document.getElementById("qty").textContent="1";var p=products[idx];materials.innerHTML="";p.materials.forEach(function(s,n){var b=document.createElement("button");b.className="material";b.type="button";b.textContent=s;b.setAttribute("aria-pressed",String(n===mat));b.addEventListener("click",function(){mat=n;materials.querySelectorAll("button").forEach(function(x,j){x.setAttribute("aria-pressed",String(j===n));})});materials.appendChild(b)});var img=sections[idx].querySelector("img");img.style.animation="none";void img.offsetHeight;img.style.animation="";}
+tabs.forEach(function(tab,n){tab.addEventListener("click",function(){show(n)})});
+document.getElementById("prev").addEventListener("click",function(){show(idx-1)});
+document.getElementById("next").addEventListener("click",function(){show(idx+1)});
+document.getElementById("minus").addEventListener("click",function(){qty=Math.max(1,qty-1);document.getElementById("qty").textContent=qty});
+document.getElementById("plus").addEventListener("click",function(){qty=Math.min(99,qty+1);document.getElementById("qty").textContent=qty});
+function quote(){var lines=["طلب عرض سعر — VIOLETA SPACE",""];cart.forEach(function(c,n){lines.push((n+1)+". "+c.name+" ("+c.en+")");lines.push("الخامة المطلوبة: "+c.material);lines.push("الكمية: "+c.qty);lines.push("");});lines.push("أرجو إرسال عرض سعر بعد مراجعة المقاسات والمواصفات.");return lines.join("\n");}
+function draw(){var area=document.getElementById("items");area.innerHTML="";if(!cart.length){var p=document.createElement("p");p.className="empty";p.textContent="لم تتم إضافة قطع حتى الآن.";area.appendChild(p);}cart.forEach(function(c,i){var div=document.createElement("div");div.className="cartRow";var details=document.createElement("div");var s=document.createElement("strong");s.textContent=c.name+" × "+c.qty;var small=document.createElement("small");small.textContent=c.material;details.appendChild(s);details.appendChild(small);var rem=document.createElement("button");rem.type="button";rem.textContent="حذف";rem.setAttribute("aria-label","حذف "+c.name);rem.addEventListener("click",function(){cart.splice(i,1);draw()});div.appendChild(details);div.appendChild(rem);area.appendChild(div)});document.getElementById("wa").href="https://wa.me/?text="+encodeURIComponent(quote());}
+document.getElementById("add").addEventListener("click",function(){var p=products[idx],m=p.materials[mat],key=p.id+"|"+m,found=cart.find(function(x){return x.key===key});if(found){found.qty+=qty}else{cart.push({key:key,name:p.name,en:p.en,material:m,qty:qty})};draw();feedback("تمت إضافة القطعة للطلب")});
+document.getElementById("copy").addEventListener("click",function(){var q=quote();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(q).then(function(){feedback("تم نسخ تفاصيل الطلب")}).catch(fallbackCopy)}else{fallbackCopy()}function fallbackCopy(){var t=document.createElement("textarea");t.value=q;document.body.appendChild(t);t.select();try{document.execCommand("copy");feedback("تم نسخ تفاصيل الطلب")}catch(e){feedback("تعذر النسخ من المتصفح")};t.remove();}});
+document.addEventListener("keydown",function(e){if(e.target.closest("input,textarea"))return;if(e.key==="ArrowRight")show(idx-1);if(e.key==="ArrowLeft")show(idx+1)});
+var x0=null;var paper=document.getElementById("paper");paper.addEventListener("touchstart",function(e){x0=e.changedTouches[0].screenX},{passive:true});paper.addEventListener("touchend",function(e){if(x0===null)return;var diff=e.changedTouches[0].screenX-x0;x0=null;if(Math.abs(diff)>65)show(idx+(diff<0?1:-1))},{passive:true});
+show(0);draw();
+})();
+</script>
+</body></html>
